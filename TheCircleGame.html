@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Circle Game</title>
+    <link rel="stylesheet" href="TheCircleGame.css" />
+    <script src="TheCircleGame.js" defer></script>
+  </head>
+  <body>
+    <div dir="rtl" id="startmessage"></div>
+    <div id="gameScreen" style="display: none">
+      <div id="scoreboard">
+        <div id="successSection">
+          <div id="successes">0</div>
+          <div id="successCircles"></div>
+        </div>
+        <div id="failureSection">
+          <div id="failures">0</div>
+          <div id="failureCircles"></div>
+        </div>
+      </div>
+    </div>
+    <div id="colorSelectionScreen">
+      <h2>בחר צבע</h2>
+      <div id="buttons">
+      <button class="color-button" style="background-color: #4caf50"> ירוק </button>
+      <button class="color-button" style="background-color: #ffeb3b"> צהוב </button>
+      <button class="color-button" style="background-color: #d6487e"> ורוד </button>
+      <button class="color-button" style="background-color: #2196f3"> כחול </button>
+      </div>
+    </div>
+    <div id="circle" style="display: none;"></div>
+    <div id="gameOverScreen" style="display: none">
+      <h1 id="endMessage"></h1>
+      <button id="restartButton">לחץ על כפתור להתחלת משחק חדש</button>
+    </div>
+  </body>
+</html>
